@@ -2,7 +2,7 @@
 
 KEY_FILE_NAME = "amazon-grape-server.pem"
 GRAPH_FILE_NAME = "amazon.dat"
-GRAPH_PARTITION_COUNT = 4
+GRAPH_PARTITION_COUNT = 3
 
 #ssh login
 ssh
@@ -14,9 +14,12 @@ sudo apt-get update
 sudo apt-get install git
 
 #config ssh between machines without password
-git clone https://github.com/yecol/deploy.git
+git clone https://github.com/songqi1990/deploy.git
 cp deploy/$KEY_FILE_NAME ~/.ssh/$KEY_FILE_NAME
-chmod ~/.ssh/$KEY_FILE_NAME 400
+chmod 400 ~/.ssh/$KEY_FILE_NAME 400
+
+sudo vim /etc/ssh/ssh_config
+IdentityFile ~/.ssh/amazon-grape-server.pem
 
 #if no java
 sudo apt-get install openjdk-7-jdk

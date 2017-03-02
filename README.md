@@ -6,15 +6,15 @@ An opensource distributed GRAph Pattern matching Engine.
 
 ## Usage
 
-#### Programming
+# Programming
 Design your own `Compute` and `IncrementalCompute` functions.
 
-Extend abstract classes in the [Interfaces](https://github.com/yecol/grape/tree/master/src/main/java/inf/ed/grape/interfaces) package to satisfy your computation task.
+Extend abstract classes in the [Interfaces](https://github.com/songqi1990/grape/tree/master/src/main/java/inf/ed/grape/interfaces) package to satisfy your computation task.
 
-Use your own program or [Metis](https://github.com/yecol/grape/tree/master/lib/metis-5.1.0) to partition graph data.
+Use your own program or [Metis](https://github.com/songqi1990/grape/tree/master/lib/metis-5.1.0) to partition graph data.
 
-#### Configure and Compile
-Configure parameters in [config.properties](https://github.com/yecol/grape/blob/master/src/main/resources/config.properties).
+## Configure and Compile
+Configure parameters in [config.properties](https://github.com/songqi1990/grape/tree/master/src/main/resources/config.properties).
 
 Then build GRAPE with maven in project root directory.
 ```sh
@@ -37,3 +37,7 @@ $ java -Djava.security.policy=security.policy -jar grape-client-0.1.jar COORDINA
 
 - Fast type-specific java collection, FastUtil. http://fastutil.di.unimi.it/
 - Graph partitioning lib, Metis. http://glaros.dtc.umn.edu/gkhome/views/metis
+
+## EC2 setup
+
+Add inbound/outbound rules (ALL TCP, ALL ICMP) in EC2 security group 
