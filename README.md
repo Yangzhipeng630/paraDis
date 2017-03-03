@@ -1,22 +1,16 @@
-#dGRAPE  [![Build Status](https://travis-ci.org/yecol/grape.svg?branch=master)](https://travis-ci.org/yecol/grape)
+#paraDis  [![Build Status](https://travis-ci.org/yecol/grape.svg?branch=master)](https://travis-ci.org/yecol/grape)
 
 
-An opensource distributed GRAph Pattern matching Engine.
+An opensource distributed diversified pattern mining platform.
 
 
 ## Usage
 
-# Programming
-Design your own `Compute` and `IncrementalCompute` functions.
-
-Extend abstract classes in the [Interfaces](https://github.com/songqi1990/grape/tree/master/src/main/java/inf/ed/grape/interfaces) package to satisfy your computation task.
-
-Use your own program or [Metis](https://github.com/songqi1990/grape/tree/master/lib/metis-5.1.0) to partition graph data.
 
 ## Configure and Compile
-Configure parameters in [config.properties](https://github.com/songqi1990/grape/tree/master/src/main/resources/config.properties).
+Configure parameters in [config.properties](https://github.com/songqi1990/paraDis/tree/master/src/main/resources/config.properties).
 
-Then build GRAPE with maven in project root directory.
+Then build paraDis with maven in project root directory.
 ```sh
 $ mvn package
 ```
