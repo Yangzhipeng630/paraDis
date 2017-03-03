@@ -1,5 +1,4 @@
-#paraDis  [![Build Status](https://travis-ci.org/yecol/grape.svg?branch=master)](https://travis-ci.org/yecol/grape)
-
+#paraDis
 
 An opensource distributed diversified pattern mining platform.
 
@@ -31,6 +30,8 @@ $ java -Djava.security.policy=security.policy -jar grape-client-0.1.jar COORDINA
 
 - Fast type-specific java collection, FastUtil. http://fastutil.di.unimi.it/
 - Graph partitioning lib, Metis. http://glaros.dtc.umn.edu/gkhome/views/metis
+- For details of diversified pattern mining please check our paper [Mining Summaries for Knowledge Graph Search](http://eecs.wsu.edu/~qsong/Files/paper/ICDM2016.pdf)
+- For single machine version of this algorithm, pleace check [GraphSum](https://github.com/songqi1990/KnowGraphSum)
 
 ## EC2 setup
 
